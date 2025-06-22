@@ -1,68 +1,65 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+  --font-poppins: Poppins, sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  --color-heading: #212529;
+  --color-body: #495057;
+  --color-label: #6c757d;
+  --color-button-text: #ffffff;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  --color-button-primary-bg: #ff6600;
+  --color-button-primary-hover-bg: #e65c00;
+  --color-button-primary-active-bg: #cc5200;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  --color-button-secondary-text: #212529;
+  --color-button-secondary-bg: #f1f3f5;
+  --color-button-secondary-hover-bg: #e0e0e0;
+  --color-button-secondary-active-bg: #d0d0d0;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  --color-button-tertiary-text: #ff6600;
+  --color-button-tertiary-hover-text: #e65c00;
+  --color-button-tertiary-active-text: #cc5200;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  --color-button-quaternary-bg: #ffffff;
+  --color-button-quaternary-text: #212529;
+  --color-button-quaternary-hover-bg: #f8f9fa;
+  --color-button-quaternary-hover-text: #212529;
+  --color-button-quaternary-active-bg: #ff6600;
+  --color-button-quaternary-active-text: #ffffff;
+  --color-button-border-quaternary: #dee2e6;
+  --color-button-border-quaternary-hover: #ced4da;
+  --color-button-border-quaternary-active: #ff6600;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  --radius-button: 0.5rem; /* Standard button radius */
+  --radius-button-pill: 9999px; /* Fully rounded buttons */
+  --padding-button-vertical: 0.75rem;
+  --padding-button-horizontal: 1.25rem;
+
+  --text-logo: 1.5rem;
+  --text-page-heading: 1.75rem;
+  --text-section-heading: 1.5rem;
+  --text-sub-heading: 1.125rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-button: 1rem;
+  --text-navigation: 1rem;
+
+  --leading-logo: 1.5;
+  --leading-page-heading: 1.5;
+  --leading-section-heading: 1.5;
+  --leading-sub-heading: 1.6;
+  --leading-body: 1.6;
+  --leading-small: 1.4;
+  --leading-button: 1.5;
+  --leading-navigation: 1.5;
+
+  --font-weight-logo: 700;
+  --font-weight-page-heading: 600;
+  --font-weight-section-heading: 600;
+  --font-weight-sub-heading: 500;
+  --font-weight-body: 400;
+  --font-weight-small: 400;
+  --font-weight-button: 500;
+  --font-weight-navigation: 500;
 }
